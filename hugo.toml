@@ -7,8 +7,9 @@ title = 'Gabriel Dornella'
   topic = 'topics'
 
 [params]
-  description = 'Thoughts on AI, leadership, and solution engineering.'
+  description = 'Notes and learnings about Artificial Intelligence for people building, learning, and navigating the space in practice.'
   author = 'Gabriel Dornella'
+  linkedin = 'https://br.linkedin.com/in/gabrieldornella'
 
 [menu]
   [[menu.main]]
