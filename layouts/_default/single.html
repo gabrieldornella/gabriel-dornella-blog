@@ -1,0 +1,18 @@
+{{ define "main" }}
+<article>
+  <div class="meta">{{ .Date.Format "Jan 2, 2006" }}</div>
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.topics }}
+    <ul class="taxonomy">
+      {{ range . }}<li><a href="{{ "/topics/" | relURL }}{{ . | urlize }}/">{{ . }}</a></li>{{ end }}
+    </ul>
+  {{ end }}
+  {{ .Content }}
+  {{ with .Params.tags }}
+    <h3>Tags</h3>
+    <ul class="taxonomy">
+      {{ range . }}<li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}/">{{ . }}</a></li>{{ end }}
+    </ul>
+  {{ end }}
+</article>
+{{ end }}

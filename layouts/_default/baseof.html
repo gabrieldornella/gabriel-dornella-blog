@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>{{ partial "head.html" . }}</head>
+<body>
+  <header>
+    <div class="muted">Gabriel Dornella</div>
+    <h1 style="margin: 8px 0 0;"><a href="{{ "/" | relURL }}">AI, leadership, and solution engineering</a></h1>
+    <nav>
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+  </header>
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer>
+    Built with Hugo and GitHub Pages.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,25 @@
+baseURL = 'https://gabrieldornella.github.io/gabriel-dornella-blog/'
+languageCode = 'en-us'
+title = 'Gabriel Dornella'
+
+[taxonomies]
+  tag = 'tags'
+  topic = 'topics'
+
+[params]
+  description = 'Thoughts on AI, leadership, and solution engineering.'
+  author = 'Gabriel Dornella'
+
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+  [[menu.main]]
+    name = 'Posts'
+    pageRef = '/posts'
+    weight = 20
+  [[menu.main]]
+    name = 'About'
+    pageRef = '/about'
+    weight = 30

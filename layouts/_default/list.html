@@ -1,0 +1,22 @@
+{{ define "main" }}
+  {{ if .IsHome }}
+    <div class="card">
+      <h2 style="margin-top:0;">Practical thinking for modern technical leadership</h2>
+      <p>{{ .Site.Params.description }}</p>
+    </div>
+  {{ else }}
+    <article>
+      <h2 style="margin-top:0;">{{ .Title }}</h2>
+      {{ .Content }}
+    </article>
+  {{ end }}
+
+  {{ $posts := where site.RegularPages "Section" "posts" }}
+  {{ range $posts.ByDate.Reverse }}
+    <div class="card">
+      <div class="meta">{{ .Date.Format "Jan 2, 2006" }}</div>
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      <p>{{ .Summary }}</p>
+    </div>
+  {{ end }}
+{{ end }}
