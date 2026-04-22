@@ -21,8 +21,6 @@ In other words, one adapter solves compatibility across many peripherals and man
 
 That is the logic behind MCP. It allows different applications, built with different technologies, protocols, and integrations, to connect to AI models without requiring a custom integration for every single agent.
 
-![MCP as the USB-C adapter of AI](/gabriel-dornella-blog/images/posts/mcp/mcp-usb-c.png)
-
 ## Why do we need autonomous agents?
 
 Before explaining how MCP helps autonomous agents connect to other applications, it helps to clarify what an LLM actually does and why agents are necessary.
@@ -45,8 +43,6 @@ That is where the agent steps in. It knows that there is a tool or system that c
 
 This is how the agent bridges model reasoning and real-world systems.
 
-![An agent connecting a model to external tools](/gabriel-dornella-blog/images/posts/mcp/mcp-agent-tools.png)
-
 ## Where does MCP fit in?
 
 Now imagine that, beyond temperature, your agent also needs to retrieve information about flights, trains, museum prices, ticket availability, and more. Each of those data sources might be a different application using a different integration style: one uses REST APIs, another uses SOAP, another uses WebSockets, another relies on file exchange. Complexity grows quickly.
@@ -65,10 +61,6 @@ MCP solves this by creating a common layer. It acts as a universal adapter, allo
 Those MCP servers become the bridge between AI systems—such as autonomous agents—and external applications, making access simpler, standardized, and reusable.
 
 With MCP, autonomous agents only need to know how to connect to the relevant MCP server(s). They no longer need to deal directly with the complexity of every underlying system.
-
-![The world without MCP](/gabriel-dornella-blog/images/posts/mcp/mcp-without-protocol.png)
-
-![The world with MCP](/gabriel-dornella-blog/images/posts/mcp/mcp-with-protocol.png)
 
 ## MCP is more than a connector
 
