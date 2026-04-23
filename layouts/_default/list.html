@@ -1,8 +1,12 @@
 {{ define "main" }}
   {{ if .IsHome }}
     <div class="card">
-      <h2 style="margin-top:0;">Practical thinking for modern technical leadership</h2>
-      <p>{{ .Site.Params.description }}</p>
+      <h2 style="margin-top:0;">Notes and learnings about AI</h2>
+      {{ .Content }}
+      <p class="muted">{{ .Site.Params.description }}</p>
+      <p style="margin-bottom:0;">
+        <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+      </p>
     </div>
   {{ else }}
     <article>
