@@ -10,6 +10,7 @@ title = 'Gabriel Dornella'
   description = 'Notes and learnings about Artificial Intelligence for people building, learning, and navigating the space in practice.'
   author = 'Gabriel Dornella'
   linkedin = 'https://br.linkedin.com/in/gabrieldornella'
+  profileImage = 'images/gabriel-dornella-profile.jpg'
 
 [menu]
   [[menu.main]]

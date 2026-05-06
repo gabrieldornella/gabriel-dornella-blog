@@ -2,10 +2,15 @@
 <html lang="en">
 <head>{{ partial "head.html" . }}</head>
 <body>
-  <header>
-    <div class="muted">Gabriel Dornella</div>
-    <h1 style="margin: 8px 0 0;"><a href="{{ "/" | relURL }}">AI, leadership, and solution engineering</a></h1>
-    <nav>
+  <header class="site-header">
+    <a class="brand" href="{{ .Site.Home.RelPermalink }}" aria-label="Gabriel Dornella home">
+      <span class="brand__mark">GD</span>
+      <span>
+        <span class="brand__name">Gabriel Dornella</span>
+        <span class="brand__tagline">AI, leadership, and workflow transformation</span>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
       {{ range .Site.Menus.main }}
         <a href="{{ .URL }}">{{ .Name }}</a>
       {{ end }}
@@ -14,8 +19,9 @@
   <main>
     {{ block "main" . }}{{ end }}
   </main>
-  <footer>
-    Built with Hugo and GitHub Pages.
+  <footer class="site-footer">
+    <span>Gabriel Dornella</span>
+    <span>Practical notes on AI adoption, agents, and the future of work.</span>
   </footer>
 </body>
 </html>

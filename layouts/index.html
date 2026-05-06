@@ -1,0 +1,81 @@
+{{ define "main" }}
+  {{ $posts := where site.RegularPages "Section" "posts" }}
+  {{ $latest := first 3 $posts.ByDate.Reverse }}
+
+  <section class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">AI strategy · workflow design · enterprise adoption</p>
+      <h1>Practical AI thinking for leaders who need execution, not hype.</h1>
+      <p class="hero__lead">
+        I write about how artificial intelligence changes the way teams work — from workflows and customer engagement to solution engineering, autonomous agents, and business transformation.
+      </p>
+      <div class="hero__actions">
+        {{ with .Site.GetPage "posts" }}<a class="button button--primary" href="{{ .RelPermalink }}">Read the latest essays</a>{{ end }}
+        <a class="button button--secondary" href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+      </div>
+    </div>
+
+    <aside class="profile-card" aria-label="Gabriel Dornella profile">
+      {{ with .Site.Params.profileImage }}
+        <img class="profile-card__image" src="{{ . | relURL }}" alt="Gabriel Dornella">
+      {{ else }}
+        <div class="profile-card__initials" aria-hidden="true">GD</div>
+      {{ end }}
+      <div>
+        <p class="profile-card__label">Gabriel Dornella</p>
+        <p class="profile-card__text">
+          Business technology leader exploring how AI becomes real operating leverage inside companies.
+        </p>
+      </div>
+    </aside>
+  </section>
+
+  <section class="section-grid" aria-label="Main themes">
+    <div class="theme-card">
+      <span class="theme-card__number">01</span>
+      <h2>AI in the flow of work</h2>
+      <p>How companies move beyond tool access and redesign actual workflows around AI capabilities.</p>
+    </div>
+    <div class="theme-card">
+      <span class="theme-card__number">02</span>
+      <h2>Enterprise adoption</h2>
+      <p>Practical lessons on trust, governance, change management, and turning pilots into business impact.</p>
+    </div>
+    <div class="theme-card">
+      <span class="theme-card__number">03</span>
+      <h2>Agents and automation</h2>
+      <p>Clear explanations of autonomous agents, AI systems, and where automation creates real leverage.</p>
+    </div>
+  </section>
+
+  <section class="insight-panel">
+    <div>
+      <p class="eyebrow">Current thesis</p>
+      <h2>The AI problem is no longer access to technology.</h2>
+    </div>
+    <p>
+      Access is getting easier every month. The harder question is operational: where should AI enter the workflow, what decisions should it support, and how should teams measure whether the work actually improves?
+    </p>
+  </section>
+
+  <section class="latest-section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Latest writing</p>
+        <h2>Essays and field notes</h2>
+      </div>
+      {{ with .Site.GetPage "posts" }}<a href="{{ .RelPermalink }}">View all posts</a>{{ end }}
+    </div>
+
+    <div class="post-grid">
+      {{ range $latest }}
+        <article class="post-card">
+          <div class="meta">{{ .Date.Format "Jan 2, 2006" }}</div>
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <p>{{ with .Params.summary }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
+          <a class="read-more" href="{{ .RelPermalink }}">Read essay →</a>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
