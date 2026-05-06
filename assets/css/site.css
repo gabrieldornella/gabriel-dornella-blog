@@ -101,9 +101,9 @@ main { padding: 28px 0 72px; }
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 340px;
+  grid-template-columns: minmax(0, 1fr) 380px;
   gap: 28px;
-  align-items: stretch;
+  align-items: start;
   margin-top: 16px;
 }
 
@@ -192,21 +192,26 @@ h3 { font-size: 1.35rem; margin: 8px 0 10px; }
 .profile-card {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  min-height: 420px;
-  padding: 28px;
+  gap: 20px;
+  padding: 26px;
   background:
-    linear-gradient(180deg, rgba(255,255,255,0.80), rgba(255,250,242,0.95)),
-    radial-gradient(circle at top right, rgba(183, 121, 74, 0.22), transparent 14rem);
+    linear-gradient(180deg, rgba(255,255,255,0.82), rgba(255,250,242,0.96)),
+    radial-gradient(circle at top right, rgba(183, 121, 74, 0.18), transparent 14rem);
+}
+
+.profile-card__header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .profile-card__initials,
 .profile-card__image {
-  width: 136px;
-  height: 136px;
-  margin-bottom: auto;
-  border-radius: 32px;
-  font-size: 3rem;
+  flex: 0 0 auto;
+  width: 96px;
+  height: 96px;
+  border-radius: 26px;
+  font-size: 2.2rem;
 }
 
 .profile-card__image {
@@ -215,14 +220,50 @@ h3 { font-size: 1.35rem; margin: 8px 0 10px; }
 }
 
 .profile-card__label {
-  margin: 28px 0 8px;
+  margin: 0 0 4px;
   font-size: 1.15rem;
-  font-weight: 800;
+  font-weight: 850;
+  line-height: 1.15;
+}
+
+.profile-card__role {
+  margin: 0;
+  color: var(--accent-strong);
+  font-size: 0.95rem;
+  font-weight: 750;
+  line-height: 1.35;
 }
 
 .profile-card__text {
   margin: 0;
+  color: #455462;
+}
+
+.profile-card__facts {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.profile-card__facts li {
+  position: relative;
+  padding-left: 22px;
   color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.profile-card__facts li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--warm);
 }
 
 .section-grid {
@@ -345,9 +386,7 @@ ul.taxonomy li a {
     grid-template-columns: 1fr;
   }
 
-  .profile-card { min-height: auto; }
-  .profile-card__initials,
-  .profile-card__image { margin-bottom: 28px; }
+  .profile-card__header { align-items: flex-start; }
 }
 
 @media (max-width: 560px) {
