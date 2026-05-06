@@ -16,17 +16,27 @@
     </div>
 
     <aside class="profile-card" aria-label="Gabriel Dornella profile">
-      {{ with .Site.Params.profileImage }}
-        <img class="profile-card__image" src="{{ . | relURL }}" alt="Gabriel Dornella">
-      {{ else }}
-        <div class="profile-card__initials" aria-hidden="true">GD</div>
-      {{ end }}
-      <div>
-        <p class="profile-card__label">Gabriel Dornella</p>
-        <p class="profile-card__text">
-          Business technology leader exploring how AI becomes real operating leverage inside companies.
-        </p>
+      <div class="profile-card__header">
+        {{ with .Site.Params.profileImage }}
+          <img class="profile-card__image" src="{{ . | relURL }}" alt="Gabriel Dornella">
+        {{ else }}
+          <div class="profile-card__initials" aria-hidden="true">GD</div>
+        {{ end }}
+        <div>
+          <p class="profile-card__label">Gabriel Dornella</p>
+          <p class="profile-card__role">Solution Engineering Director, Latin America</p>
+        </div>
       </div>
+
+      <p class="profile-card__text">
+        Technology leader with experience across monday.com, Salesforce, SAP, Oracle, and Hyperion — focused on connecting AI, enterprise software, and business execution.
+      </p>
+
+      <ul class="profile-card__facts" aria-label="Profile highlights">
+        <li>AI adoption and workflow transformation</li>
+        <li>Solution Engineering and pre-sales leadership</li>
+        <li>Enterprise software and customer engagement</li>
+      </ul>
     </aside>
   </section>
 
