@@ -229,12 +229,3 @@ That is where the real value is.
 
 And that is where the hard work begins.
 
----
-
-## Suggested keywords
-
-AI adoption, enterprise AI, workflow automation, context engineering, AI transformation, autonomous agents, business workflows, AI strategy
-
-## YouTube adaptation angle
-
-Turn this into an explainer video: “Why giving everyone ChatGPT is not an AI strategy.” Use the car wash example as the opening hook, then move into a practical 5-question framework for integrating AI into workflows.
