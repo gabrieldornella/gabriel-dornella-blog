@@ -9,8 +9,6 @@ topics = ["AI"]
 
 The role of solution engineers and pre-sales professionals is going through one of the biggest transformations I have seen in my career.
 
-![AI-powered pre-sales demo architecture](/gabriel-dornella-blog/images/future-presales-architecture.png)
-
 When I started in this field in 2004, still as an intern, a large part of my work was preparing or fixing the environments that the pre-sales team used to build demos.
 
 Everything was still on-premise. I spent a lot of time configuring virtual machines so we could have the database, the application server, the web server, and all the other components working properly. After that, I had to prepare data and create the configurations the pre-sales team needed to build their demonstrations.
@@ -43,7 +41,9 @@ A few hours later, Codex had finished building the demonstration. I would say it
 
 I still made some final adjustments. Those human touches still matter. They are often what make the difference between a technically correct demo and a compelling customer conversation. I also made a few small changes to the slides.
 
-But in just a few hours, I had a fully customized demo and a personalized presentation for that specific customer — something that previously would have taken days to build.
+But in just a few hours, I had a fully customized demo and a personalized presentation for that specific customer, something that previously would have taken days to build.
+
+![AI-powered pre-sales demo architecture](/gabriel-dornella-blog/images/future-presales-architecture.png)
 
 This is the future of our profession. But getting there requires more than simply giving people access to tools like Gemini, ChatGPT, Claude, or Codex.
 
