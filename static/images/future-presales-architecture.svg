@@ -1,0 +1,78 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F8FAFC"/>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#0F172A" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M2 2 L12 7 L2 12" stroke="#2563EB" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="strokeWidth">
+      <path d="M2 2 L12 7 L2 12" stroke="#64748B" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <text x="110" y="92" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="760" fill="#0F172A">AI-powered pre-sales demo architecture</text>
+  <text x="112" y="132" font-family="Inter, Arial, sans-serif" font-size="22" fill="#475569">How customer context, internal data, MCP, and a guided agent come together to build a customized demo.</text>
+
+  <!-- Context layer -->
+  <rect x="110" y="194" width="1380" height="154" rx="28" fill="#EAF2FF" stroke="#BFDBFE" stroke-width="2"/>
+  <text x="146" y="237" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#1E40AF" letter-spacing="1.5">CUSTOMER CONTEXT</text>
+
+  <rect x="155" y="266" width="270" height="86" rx="18" fill="#FFFFFF" stroke="#D8E3F0" filter="url(#shadow)"/>
+  <text x="190" y="303" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="720" fill="#0F172A">Discovery call</text>
+  <text x="190" y="332" font-family="Inter, Arial, sans-serif" font-size="17" fill="#64748B">Initial customer conversation</text>
+
+  <rect x="505" y="266" width="270" height="86" rx="18" fill="#FFFFFF" stroke="#D8E3F0" filter="url(#shadow)"/>
+  <text x="540" y="303" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="720" fill="#0F172A">AI notetaker</text>
+  <text x="540" y="332" font-family="Inter, Arial, sans-serif" font-size="17" fill="#64748B">Transcript and call summary</text>
+
+  <rect x="855" y="266" width="280" height="86" rx="18" fill="#FFFFFF" stroke="#D8E3F0" filter="url(#shadow)"/>
+  <text x="890" y="303" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="720" fill="#0F172A">CRM context</text>
+  <text x="890" y="332" font-family="Inter, Arial, sans-serif" font-size="17" fill="#64748B">Account history and signals</text>
+
+  <rect x="1215" y="266" width="230" height="86" rx="18" fill="#FFFFFF" stroke="#D8E3F0" filter="url(#shadow)"/>
+  <text x="1250" y="303" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="720" fill="#0F172A">Data lake</text>
+  <text x="1250" y="332" font-family="Inter, Arial, sans-serif" font-size="17" fill="#64748B">Internal knowledge</text>
+
+  <path d="M425 309H505" stroke="#2563EB" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M775 309H855" stroke="#2563EB" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M1135 309H1215" stroke="#2563EB" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- AI layer -->
+  <rect x="355" y="430" width="890" height="148" rx="32" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2.5" filter="url(#shadow)"/>
+  <text x="412" y="483" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="780" fill="#0F172A">Codex demo agent</text>
+  <text x="412" y="523" font-family="Inter, Arial, sans-serif" font-size="22" fill="#475569">Plans the solution, builds artifacts, and iterates.</text>
+
+  <rect x="900" y="462" width="300" height="74" rx="18" fill="#EFF6FF" stroke="#93C5FD" stroke-width="2"/>
+  <text x="935" y="493" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="750" fill="#1D4ED8">Custom skill</text>
+  <text x="935" y="520" font-family="Inter, Arial, sans-serif" font-size="16" fill="#475569">Gabriel's style + demo method</text>
+
+  <path d="M640 352C640 385 640 398 640 430" stroke="#2563EB" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M995 352C995 385 995 398 995 430" stroke="#2563EB" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M1330 352C1330 445 1258 500 1245 500" stroke="#2563EB" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Integration layer -->
+  <rect x="580" y="646" width="440" height="90" rx="24" fill="#0F172A" filter="url(#shadow)"/>
+  <text x="716" y="683" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#FFFFFF">MCP</text>
+  <text x="640" y="716" font-family="Inter, Arial, sans-serif" font-size="18" fill="#CBD5E1">Secure tool and platform access</text>
+
+  <path d="M800 578V646" stroke="#2563EB" stroke-width="3.5" marker-end="url(#arrow)"/>
+
+  <!-- Output layer -->
+  <rect x="155" y="645" width="310" height="92" rx="22" fill="#FFFFFF" stroke="#CBD5E1" filter="url(#shadow)"/>
+  <text x="190" y="683" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="740" fill="#0F172A">Human guidance</text>
+  <text x="190" y="713" font-family="Inter, Arial, sans-serif" font-size="17" fill="#64748B">Taste, judgment, final touches</text>
+
+  <rect x="1135" y="645" width="310" height="92" rx="22" fill="#FFFFFF" stroke="#CBD5E1" filter="url(#shadow)"/>
+  <text x="1170" y="683" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="740" fill="#0F172A">Demo environment</text>
+  <text x="1170" y="713" font-family="Inter, Arial, sans-serif" font-size="17" fill="#64748B">Configured platform and artifacts</text>
+
+  <path d="M465 691H580" stroke="#64748B" stroke-width="3" marker-end="url(#arrowGray)"/>
+  <path d="M1020 691H1135" stroke="#2563EB" stroke-width="3.5" marker-end="url(#arrow)"/>
+
+  <rect x="435" y="800" width="730" height="62" rx="31" fill="#DBEAFE" stroke="#93C5FD" stroke-width="2"/>
+  <text x="505" y="840" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="760" fill="#1E3A8A">Output: customized demo + personalized customer story</text>
+  <path d="M1290 737C1290 802 1190 831 1165 831" stroke="#2563EB" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M310 737C310 802 410 831 435 831" stroke="#64748B" stroke-width="3" marker-end="url(#arrowGray)"/>
+</svg>
