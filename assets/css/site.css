@@ -25,7 +25,8 @@ body {
     radial-gradient(circle at top left, rgba(49, 95, 114, 0.14), transparent 34rem),
     linear-gradient(180deg, #fbf8f2 0%, var(--bg) 42%, #f1ece4 100%);
   color: var(--text);
-  line-height: 1.7;
+  font-size: 0.96rem;
+  line-height: 1.65;
 }
 
 a { color: var(--accent); text-decoration: none; }
@@ -144,17 +145,17 @@ h3 {
 h1 {
   max-width: 780px;
   margin: 0;
-  font-size: clamp(2.5rem, 6vw, 5.4rem);
+  font-size: clamp(2.25rem, 5.2vw, 4.75rem);
 }
 
-h2 { font-size: clamp(1.7rem, 3vw, 2.6rem); margin: 0 0 12px; }
-h3 { font-size: 1.35rem; margin: 8px 0 10px; }
+h2 { font-size: clamp(1.55rem, 2.6vw, 2.25rem); margin: 0 0 12px; }
+h3 { font-size: 1.25rem; margin: 8px 0 10px; }
 
 .hero__lead {
   max-width: 690px;
   margin: 24px 0 0;
   color: #455462;
-  font-size: clamp(1.05rem, 1.8vw, 1.28rem);
+  font-size: clamp(1rem, 1.55vw, 1.16rem);
 }
 
 .hero__actions {
@@ -221,7 +222,7 @@ h3 { font-size: 1.35rem; margin: 8px 0 10px; }
 
 .profile-card__label {
   margin: 0 0 4px;
-  font-size: 1.15rem;
+  font-size: 1.08rem;
   font-weight: 850;
   line-height: 1.15;
 }
@@ -303,7 +304,7 @@ h3 { font-size: 1.35rem; margin: 8px 0 10px; }
 .insight-panel h2,
 .insight-panel p { color: #f7fbfc; }
 .insight-panel .eyebrow { color: #e7bd93; }
-.insight-panel p { font-size: 1.1rem; opacity: 0.92; }
+.insight-panel p { font-size: 1.02rem; opacity: 0.92; }
 
 .latest-section { margin-top: 56px; }
 
