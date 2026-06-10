@@ -1,16 +1,16 @@
 :root {
-  --bg: #f6f3ee;
-  --bg-soft: #ebe5dc;
-  --surface: #fffaf2;
+  --bg: #f4f7fb;
+  --bg-soft: #e8eef7;
+  --surface: #ffffff;
   --surface-strong: #ffffff;
-  --text: #1f2933;
-  --muted: #64748b;
-  --accent: #315f72;
-  --accent-strong: #21485a;
-  --accent-soft: #dbe9ec;
-  --warm: #b7794a;
-  --border: #ded6ca;
-  --shadow: 0 24px 70px rgba(38, 50, 56, 0.10);
+  --text: #172033;
+  --muted: #5f6f86;
+  --accent: #2563eb;
+  --accent-strong: #1d4ed8;
+  --accent-soft: #dbeafe;
+  --warm: #2563eb;
+  --border: #d8e2ef;
+  --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
   --max: 1120px;
 }
 
@@ -22,8 +22,8 @@ body {
   margin: 0;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(49, 95, 114, 0.14), transparent 34rem),
-    linear-gradient(180deg, #fbf8f2 0%, var(--bg) 42%, #f1ece4 100%);
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.10), transparent 34rem),
+    linear-gradient(180deg, #f8fbff 0%, var(--bg) 44%, #edf3fb 100%);
   color: var(--text);
   font-size: 0.96rem;
   line-height: 1.65;
@@ -61,7 +61,7 @@ main,
   display: grid;
   place-items: center;
   color: #fff;
-  background: linear-gradient(135deg, var(--accent), #6f8f87);
+  background: linear-gradient(135deg, var(--accent), #0f4aa8);
   font-weight: 800;
   letter-spacing: -0.04em;
 }
@@ -70,7 +70,7 @@ main,
   width: 42px;
   height: 42px;
   border-radius: 14px;
-  box-shadow: 0 12px 30px rgba(49, 95, 114, 0.22);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.20);
 }
 
 .brand__name,
@@ -94,7 +94,7 @@ main,
 }
 
 .site-nav a:hover {
-  background: rgba(49, 95, 114, 0.10);
+  background: rgba(37, 99, 235, 0.10);
   text-decoration: none;
 }
 
@@ -115,9 +115,9 @@ main { padding: 28px 0 72px; }
 .post-card,
 article.card,
 article {
-  background: rgba(255, 250, 242, 0.86);
-  border: 1px solid rgba(222, 214, 202, 0.9);
-  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(216, 226, 239, 0.95);
+  border-radius: 24px;
   box-shadow: var(--shadow);
 }
 
@@ -139,7 +139,7 @@ h2,
 h3 {
   line-height: 1.12;
   letter-spacing: -0.045em;
-  color: #17212b;
+  color: #0f172a;
 }
 
 h1 {
@@ -154,7 +154,7 @@ h3 { font-size: 1.25rem; margin: 8px 0 10px; }
 .hero__lead {
   max-width: 690px;
   margin: 24px 0 0;
-  color: #455462;
+  color: #4f6075;
   font-size: clamp(1rem, 1.55vw, 1.16rem);
 }
 
@@ -180,7 +180,7 @@ h3 { font-size: 1.25rem; margin: 8px 0 10px; }
 .button--primary {
   color: #fff;
   background: var(--accent);
-  box-shadow: 0 14px 32px rgba(49, 95, 114, 0.22);
+  box-shadow: 0 14px 32px rgba(37, 99, 235, 0.20);
 }
 
 .button--primary:hover { color: #fff; background: var(--accent-strong); }
@@ -196,8 +196,8 @@ h3 { font-size: 1.25rem; margin: 8px 0 10px; }
   gap: 20px;
   padding: 26px;
   background:
-    linear-gradient(180deg, rgba(255,255,255,0.82), rgba(255,250,242,0.96)),
-    radial-gradient(circle at top right, rgba(183, 121, 74, 0.18), transparent 14rem);
+    linear-gradient(180deg, rgba(255,255,255,0.92), rgba(248,251,255,0.98)),
+    radial-gradient(circle at top right, rgba(37, 99, 235, 0.12), transparent 14rem);
 }
 
 .profile-card__header {
@@ -237,7 +237,7 @@ h3 { font-size: 1.25rem; margin: 8px 0 10px; }
 
 .profile-card__text {
   margin: 0;
-  color: #455462;
+  color: #4f6075;
 }
 
 .profile-card__facts {
@@ -297,13 +297,13 @@ h3 { font-size: 1.25rem; margin: 8px 0 10px; }
   align-items: center;
   margin-top: 24px;
   padding: clamp(28px, 4vw, 44px);
-  background: linear-gradient(135deg, #213f4c, #315f72);
+  background: linear-gradient(135deg, #0f2f5f, #1d4ed8);
   color: #f7fbfc;
 }
 
 .insight-panel h2,
 .insight-panel p { color: #f7fbfc; }
-.insight-panel .eyebrow { color: #e7bd93; }
+.insight-panel .eyebrow { color: #bfdbfe; }
 .insight-panel p { font-size: 1.02rem; opacity: 0.92; }
 
 .latest-section { margin-top: 56px; }
@@ -326,7 +326,7 @@ h3 { font-size: 1.25rem; margin: 8px 0 10px; }
 }
 
 .post-card { box-shadow: none; }
-.post-card h3 a { color: #17212b; }
+.post-card h3 a { color: #0f172a; }
 .post-card h3 a:hover { color: var(--accent); }
 .read-more { display: inline-block; margin-top: 18px; }
 
@@ -367,7 +367,7 @@ ul.taxonomy li a {
   gap: 18px;
   padding: 28px 0 42px;
   color: var(--muted);
-  border-top: 1px solid rgba(222, 214, 202, 0.9);
+  border-top: 1px solid rgba(216, 226, 239, 0.95);
 }
 
 @media (max-width: 900px) {
