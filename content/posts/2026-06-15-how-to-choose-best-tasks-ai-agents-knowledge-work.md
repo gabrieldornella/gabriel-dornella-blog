@@ -1,13 +1,13 @@
 +++
-title = "How to Choose the Best Tasks for AI Agents in Knowledge Work"
+title = "Why AI Agents Work So Well for Code and What We Can Learn From It"
 date = 2026-06-15T09:00:00-03:00
 draft = false
-summary = "Why AI agents work so well for software engineering, and how to choose the right knowledge-work tasks for agentic automation."
+summary = "What the success of AI agents in coding tasks teaches us about applying agents to knowledge work."
 tags = ["AI", "AI agents", "knowledge work", "enterprise AI", "automation"]
 topics = ["AI"]
 +++
 
-*Versão em português: [Como escolher as melhores tarefas para agentes de IA no trabalho de conhecimento](/gabriel-dornella-blog/posts/2026-06-15-como-escolher-melhores-tarefas-agentes-ia-trabalho-conhecimento/).* 
+*Versão em português: [Por que agentes de IA funcionam tão bem para código e o que podemos aprender com isso](/gabriel-dornella-blog/posts/2026-06-15-como-escolher-melhores-tarefas-agentes-ia-trabalho-conhecimento/).* 
 
 Why do AI agents work so well for coding tasks, but still face challenges in other areas?
 
