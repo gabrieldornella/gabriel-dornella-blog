@@ -11,6 +11,7 @@ title = 'Gabriel Dornella'
   author = 'Gabriel Dornella'
   linkedin = 'https://br.linkedin.com/in/gabrieldornella'
   profileImage = 'images/gabriel-dornella-profile.jpg'
+  cloudflareAnalyticsToken = '27603bef98d544e2a9d7c73cfde4759f'
 
 [menu]
   [[menu.main]]

@@ -23,5 +23,8 @@
     <span>Gabriel Dornella</span>
     <span>Practical notes on AI adoption, agents, and the future of work.</span>
   </footer>
+  {{ with .Site.Params.cloudflareAnalyticsToken }}
+    <!-- Cloudflare Web Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ . }}"}'></script><!-- End Cloudflare Web Analytics -->
+  {{ end }}
 </body>
 </html>
