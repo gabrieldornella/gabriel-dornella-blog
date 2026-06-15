@@ -11,7 +11,7 @@ topics = ["AI"]
 
 Why do AI agents work so well for coding tasks, but still face challenges in other areas?
 
-In my [previous article](https://gabrieldornella.github.io/gabriel-dornella-blog/posts/2026-05-25-how-ai-is-changing-pre-sales/), I wrote about the productivity gains developers are seeing by adopting AI for coding — especially AI agents — and how we can apply the same logic to other types of work, as long as we create the right environment for both humans and agents.
+In my [previous article](https://gabrieldornella.github.io/gabriel-dornella-blog/posts/2026-05-25-how-ai-is-changing-pre-sales/), I wrote about the productivity gains developers are seeing by adopting AI for coding and how we can apply the same logic to other types of work, as long as we create the right environment for both humans and agents.
 
 In recent weeks, two of the most innovative builders in this new wave, Peter Steinberger, creator of OpenClaw, and Boris Cherny, creator of Claude Code, took this concept one step further. They said they no longer write prompts directly for their agents. Instead, they write loops that generate prompts and interact with the agents. These loops are processes that provide context, receive responses, verify results, and continue moving forward.
 
