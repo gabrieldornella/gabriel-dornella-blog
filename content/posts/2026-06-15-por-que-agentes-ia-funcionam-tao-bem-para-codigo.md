@@ -11,7 +11,7 @@ topics = ["AI"]
 
 Por que agentes de IA funcionam tão bem para tarefas de código mas ainda tem desafios para outras áreas.
 
-No artigo anterior, escrevi sobre o ganho de produtividade que os desenvolvedores estão tendo ao adotar IA para codificação (especialmente agentes de IA) e sobre como podemos aplicar essa mesma lógica a outros tipos de tarefa, desde que criemos o ambiente correto tanto para os humanos quanto para os agentes.
+[No artigo anterior](https://gabrieldornella.github.io/gabriel-dornella-blog/posts/2026-05-25-how-ai-is-changing-pre-sales/), escrevi sobre o ganho de produtividade que os desenvolvedores estão tendo ao adotar IA para codificação (especialmente agentes de IA) e sobre como podemos aplicar essa mesma lógica a outros tipos de tarefa, desde que criemos o ambiente correto tanto para os humanos quanto para os agentes.
 
 Nas últimas semanas, dois dos criadores mais inovadores desse novo momento, Peter Steinberger, criador do OpenClaw, e Boris Cherny, criador do Claude Code, elevaram esse conceito e disseram que já não escrevem prompts diretamente para seus agentes. Agora, eles escrevem loops que geram prompts e interagem com os agentes. Esses loops são processos que dão contexto, recebem respostas, verificam resultados e seguem avançando continuamente.
 
