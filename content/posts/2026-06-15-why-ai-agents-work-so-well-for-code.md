@@ -7,7 +7,7 @@ tags = ["AI", "AI agents", "knowledge work", "enterprise AI", "automation"]
 topics = ["AI"]
 +++
 
-*Versão em português: [Por que agentes de IA funcionam tão bem para código e o que podemos aprender com isso](/gabriel-dornella-blog/posts/2026-06-15-como-escolher-melhores-tarefas-agentes-ia-trabalho-conhecimento/).* 
+*Versão em português: [Por que agentes de IA funcionam tão bem para código e o que podemos aprender com isso](/gabriel-dornella-blog/posts/2026-06-15-por-que-agentes-ia-funcionam-tao-bem-para-codigo/).* 
 
 Why do AI agents work so well for coding tasks, but still face challenges in other areas?
 
